@@ -47,11 +47,11 @@ class Account extends React.Component<Props, State> {
     } else {
       return (
         <div className="account-container">
-          <h1>Your Account</h1>
+          <h1>{user.username}</h1>
           <div className="account">
             <div className="account-info">
               <div className="top">
-                <h2>Info</h2>
+                <h3>Info</h3>
                 <IconButton
                   color="secondary"
                   aria-label="Edit"
@@ -62,12 +62,14 @@ class Account extends React.Component<Props, State> {
               <Divider />
               <p><b>Username: </b>{user.username}</p>
               <p><b>E-mail: </b>{user.email}</p>
-              <p><b>Billing Address: </b>{user.address}</p>
-              <p><b>Phone: </b>{user.phone}</p>
+              <p><b>Alamat: </b>{user.address}</p>
+              <p><b>Handphone: </b>{user.phone}</p>
             </div>
             <div className="account-history">
-              <h2>Order History</h2>
+              <h3>Edit Profil</h3>
               <Divider />
+              <br></br>
+              <h2>Riwayat Pembelian</h2>
               <div className="orders">
                 {user.orders.length ?
                   <table>

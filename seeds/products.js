@@ -4,6 +4,37 @@ const Product = require('../models/Product');
 const products = [
   {
     info: {
+      name: 'Samsung Galaxy A51',
+      dimensions: '158.4 x 78.1 x 7.5 mm',
+      weight: '202 g',
+      displayType: 'LED-backlit IPS LCD, capacitive touchscreen, 16M colors',
+      displaySize: '5.5"',
+      displayResolution: '1080 x 1920 pixels',
+      os: 'iOS 11',
+      cpu: 'Hexa-core (2x Monsoon + 4x Mistral)',
+      internalMemory: '256 GB',
+      ram: '4 GB',
+      camera: 'Dual: 12 MP (f/1.8, 28mm, OIS) + 12 MP (f/2.8, 57mm)',
+      batery: 'Non-removable Li-Ion 2691 mAh battery (10.28 Wh)',
+      color: 'White',
+      price: 5000000,
+      photo: '/img/ss-a51.jpg'
+    },
+    tags: {
+      priceRange: '500-750',
+      brand: 'samsung',
+      color: 'black',
+      os: 'android',
+      internalMemory: '256',
+      ram: '4',
+      displaySize: '5.5',
+      displayResolution: '1080x1920',
+      camera: '12',
+      cpu: 'hexa_core'
+    }
+  },
+  {
+    info: {
       name: 'Apple iPhone 8 Plus',
       dimensions: '158.4 x 78.1 x 7.5 mm',
       weight: '202 g',
@@ -17,7 +48,7 @@ const products = [
       camera: 'Dual: 12 MP (f/1.8, 28mm, OIS) + 12 MP (f/2.8, 57mm)',
       batery: 'Non-removable Li-Ion 2691 mAh battery (10.28 Wh)',
       color: 'White',
-      price: 700,
+      price: 7000000,
       photo: '/img/apple_iphone_8_plus.jpg'
     },
     tags: {
@@ -48,7 +79,7 @@ const products = [
       camera: 'Dual: 12 MP (f/1.8, 28mm) + 12 MP (f/2.4, 52mm)',
       batery: 'Non-removable Li-Ion 2716 mAh battery (10.35 Wh)',
       color: 'Black',
-      price: 950,
+      price: 9500000,
       photo: '/img/apple_iphone_x.jpg'
     },
     tags: {
@@ -79,7 +110,7 @@ const products = [
       camera: '12 MP (f/1.7, 1.4 µm, Dual Pixel PDAF, 5-axis OIS)',
       batery: 'Non-removable Li-Ion 3000 mAh battery',
       color: 'Ice White',
-      price: 450,
+      price: 4500000,
       photo: '/img/htc_u11.jpg'
     },
     tags: {
@@ -110,7 +141,7 @@ const products = [
       camera: 'Dual: 12 MP (f/1.6, 27mm, OIS) +20 MP (f/1.6, 27mm)',
       batery: 'Non-removable Li-Po 4000 mAh battery',
       color: 'Titanium Gray',
-      price: 800,
+      price: 8000000,
       photo: '/img/huawei_mate_10_pro.jpg'
     },
     tags: {
@@ -141,7 +172,7 @@ const products = [
       camera: 'Dual: 12 MP (f/2.2, PDAF, OIS) + 20 MP',
       batery: 'Non-removable Li-Ion 3200 mAh battery',
       color: 'Mystic Silver',
-      price: 680,
+      price: 6800000,
       photo: '/img/huawei_p10.jpg'
     },
     tags: {
@@ -172,7 +203,7 @@ const products = [
       camera: 'Dual: 13 MP (f/1.8, 1/3", 1.12 µm, 3-axis OIS, PDAF) + 13 MP (f/2.4, no AF)',
       batery: 'Non-removable Li-Po 3300 mAh battery',
       color: 'Ice Platinum',
-      price: 800,
+      price: 8000000,
       photo: '/img/lg_g6.jpg'
     },
     tags: {
@@ -203,7 +234,7 @@ const products = [
       camera: 'Dual: 16 MP (f/1.6, 1 µm, 3-axis OIS, PDAF) + 13 MP (f/1.9, no AF)',
       batery: 'Non-removable Li-Po 3300 mAh battery',
       color: 'Aurora Black',
-      price: 800,
+      price: 8000000,
       photo: '/img/lg_v30.jpg'
     },
     tags: {
@@ -234,7 +265,7 @@ const products = [
       camera: '8 MP (f/2.4, 31mm), autofocus, LED flash',
       batery: 'Non-removable Li-Ion 1900 mAh battery',
       color: 'Silver',
-      price: 150,
+      price: 1500000,
       photo: '/img/samsung_galaxy_a3.JPG'
     },
     tags: {
@@ -265,7 +296,7 @@ const products = [
       camera: 'Dual: 12 MP (f/1.7, 26mm, 1/2.5", 1.4 µm) + 12MP (f/2.4, 52mm, 1/3.6", 1 µm)',
       batery: 'Non-removable Li-Ion 3300 mAh battery',
       color: 'Midnight Black',
-      price: 800,
+      price: 8000000,
       photo: '/img/samsung_galaxy_note_8.jpg'
     },
     tags: {
@@ -296,7 +327,7 @@ const products = [
       camera: '12 MP (f/1.7, 26mm, 1/2.5", 1.4 µm, Dual Pixel PDAF), phase detection autofocus, OIS',
       batery: 'Non-removable Li-Ion 3000 mAh battery',
       color: 'Midnight Black',
-      price: 720,
+      price: 7200000,
       photo: '/img/samsung_galaxy_s8.jpg'
     },
     tags: {
