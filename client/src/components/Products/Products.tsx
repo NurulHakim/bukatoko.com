@@ -21,3 +21,32 @@ interface Props {
     drawerOpen: boolean;
     value: string;
   }
+
+  export class Products extends React.Component<Props, State> {
+    state = {
+      drawerOpen: false,
+      value: this.props.sortBy || 'Name: A-Z'
+    }
+  
+    toggleDrawer = () => {
+      this.setState({ drawerOpen: !this.state.drawerOpen });
+    }
+  
+    handleChange = (e: React.ChangeEvent, index: number, value: string) => {
+      this.props.setSortBy(value);
+      this.setState({ value });
+    }
+  
+    componentWillMount() {
+      this.props.initCatalog();
+    }
+  
+    render() {
+      const {
+        catalogLoaded,
+        catalog,
+        clearFilters
+      } = this.props;
+    }
+
+    export default Products;  
