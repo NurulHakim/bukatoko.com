@@ -50,7 +50,7 @@
   
   .content-right h2 {
     margin: 0 0 40px 0;
-    font-size: 30px;
+    /* font-size: 26px !important; */
     color: #64DD17;
   }
   

@@ -79,7 +79,7 @@ class Cart extends React.Component<Props, State> {
 
     return (
       <div className="cart-container">
-        <h1>Your Cart</h1>
+        <h1>Keranjang</h1>
         <div className="cart">
           <div className="cart-info">
             <div className="info">
@@ -141,7 +141,7 @@ class Cart extends React.Component<Props, State> {
               modal={true}
               open={this.state.activeModal === 'dialog'}
             >
-              Semua Item Dihapus
+              Anda yakin ingin menghapus semua item?
             </Dialog>
           </div>
           <div className="cart-items">
@@ -152,7 +152,7 @@ class Cart extends React.Component<Props, State> {
                     <th></th>
                     <th>Nama Produk</th>
                     <th>Harga</th>
-                    <th>Jumlah</th>
+                    <th>Qty</th>
                     <th>Total</th>
                     <th></th>
                   </tr>

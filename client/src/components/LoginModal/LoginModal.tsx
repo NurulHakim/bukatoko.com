@@ -31,7 +31,7 @@ const LoginModal: React.SFC<ModalProps> = ({ isOpen, onRequestClose, setActiveMo
         primary={true}
         type="submit"
       />
-      <p>Don't have an account yet? <a onClick={() => setActiveModal('register')}>Register here</a>.</p>
+      <p>Tidak Punya Akun :( ? <a onClick={() => setActiveModal('register')}>Daftar</a>.</p>
     </form>
   </Modal>
 );

@@ -46,7 +46,7 @@ class FiltersList extends React.Component<Props> {
               <Checkbox className="checkbox" label="Apple" name="brand" value="apple" checked={checked.includes('apple')} onCheck={this.handleCheck} />,
               <Checkbox className="checkbox" label="Huawei" name="brand" value="huawei" checked={checked.includes('huawei')} onCheck={this.handleCheck} />,
               <Checkbox className="checkbox" label="LG" name="brand" value="lg" checked={checked.includes('lg')} onCheck={this.handleCheck} />,
-              <Checkbox className="checkbox" label="HTC" name="brand" value="htc" checked={checked.includes('htc')} onCheck={this.handleCheck} />,
+              <Checkbox className="checkbox" label="Xiaomi" name="brand" value="xiaomi" checked={checked.includes('xiaomi')} onCheck={this.handleCheck} />,
             ]}
           />
           <ListItem
@@ -94,7 +94,7 @@ class FiltersList extends React.Component<Props> {
               <Checkbox className="checkbox" label="6GB" name="ram" value="6" checked={checked.includes('6')} onCheck={this.handleCheck} />
             ]}
           />
-          <ListItem
+          {/* <ListItem
             className="listItem"
             primaryText="Display size"
             initiallyOpen={false}
@@ -107,7 +107,7 @@ class FiltersList extends React.Component<Props> {
               <Checkbox className="checkbox" label="6.0''" name="displaySize" value="6.0" checked={checked.includes('6.0')} onCheck={this.handleCheck} />,
               <Checkbox className="checkbox" label="6.3''" name="displaySize" value="6.3" checked={checked.includes('6.3')} onCheck={this.handleCheck} />
             ]}
-          />
+          /> */}
           {/* <ListItem
             className="listItem"
             primaryText="Display resolution"

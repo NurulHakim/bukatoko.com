@@ -75,9 +75,9 @@ class Account extends React.Component<Props, State> {
                   <table>
                     <thead>
                       <tr>
-                        <th>Date Created</th>
-                        <th>Product Name</th>
-                        <th>Price</th>
+                        <th>Tanggal Pembelian</th>
+                        <th>Nama Produk</th>
+                        <th>Harga</th>
                         <th>Qty</th>
                         <th>Total</th>
                       </tr>
@@ -96,7 +96,7 @@ class Account extends React.Component<Props, State> {
                       })}
                     </tbody>
                   </table> :
-                  <h1>No order history.</h1>
+                  <h1>Riwayat Kosong.</h1>
                 }
               </div>
             </div>

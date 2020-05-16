@@ -1,9 +1,9 @@
 {
-  "name": "fullstack-shopping-cart",
+  "name": "bukatoko",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tubes PWL",
   "main": "index.js",
-  "author": "",
+  "author": "Nurul & Iman & Leo",
   "license": "ISC",
   "scripts": {
     "start:dev": "webpack-dev-server",

@@ -31,17 +31,17 @@ const Product = ({ item: {info, _id} }: Props) => {
         <div className="content-left">
           <h3>{name}</h3>
           <div className="content-info">
-            <div><b>Display size: </b><span>{displaySize}</span></div>
-            <div><b>Display resolution: </b><span>{displayResolution}</span></div>
             <div><b>CPU: </b><span>{cpu}</span></div>
-            <div><b>Internal memory: </b><span>{internalMemory}</span></div>
+            <div><b>Memory Internal: </b><span>{internalMemory}</span></div>
             <div><b>RAM: </b><span>{ram}</span></div>
-            <div><b>Camera: </b><span>{camera.length < 50 ? camera : camera.slice(0, 50) + '...'}</span></div>
+            <div><b>Ukuran Layar: </b><span>{displaySize}</span></div>
+            <div><b>Resolusi: </b><span>{displayResolution}</span></div>
+            <div><b>Kamera: </b><span>{camera.length < 50 ? camera : camera.slice(0, 50) + '...'}</span></div>
           </div>
         </div>
         <div className="content-right">
           <div className="content-info">
-            <p><b>Price:</b></p>
+            <p><b>Harga:</b></p>
             <h2>Rp.{numeral(price).format('0,0')}</h2>
           </div>
           <RaisedButton

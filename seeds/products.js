@@ -4,13 +4,137 @@ const Product = require('../models/Product');
 const products = [
   {
     info: {
-      name: 'Samsung Galaxy A51',
+      name: 'Apple iPhone Xs',
       dimensions: '158.4 x 78.1 x 7.5 mm',
       weight: '202 g',
       displayType: 'LED-backlit IPS LCD, capacitive touchscreen, 16M colors',
       displaySize: '5.5"',
       displayResolution: '1080 x 1920 pixels',
       os: 'iOS 11',
+      cpu: 'Hexa-core (2x Monsoon + 4x Mistral)',
+      internalMemory: '256 GB',
+      ram: '6 GB',
+      camera: 'Dual: 12 MP (f/1.8, 28mm, OIS) + 12 MP (f/2.8, 57mm)',
+      batery: 'Non-removable Li-Ion 2691 mAh battery (10.28 Wh)',
+      color: 'White',
+      price: 11000000,
+      photo: '/img/ap-x.jpg'
+    },
+    tags: {
+      priceRange: '750>',
+      brand: 'apple',
+      color: 'black',
+      os: 'android',
+      internalMemory: '256',
+      ram: '6',
+      displaySize: '5.5',
+      displayResolution: '1080x1920',
+      camera: '12',
+      cpu: 'hexa_core'
+    }
+  },
+  {
+    info: {
+      name: 'Samsung Galaxy A21',
+      dimensions: '158.4 x 78.1 x 7.5 mm',
+      weight: '202 g',
+      displayType: 'LED-backlit IPS LCD, capacitive touchscreen, 16M colors',
+      displaySize: '5.5"',
+      displayResolution: '1080 x 1920 pixels',
+      os: 'Android 9',
+      cpu: 'Hexa-core (2x Monsoon + 4x Mistral)',
+      internalMemory: '64 GB',
+      ram: '4 GB',
+      camera: 'Dual: 12 MP (f/1.8, 28mm, OIS) + 12 MP (f/2.8, 57mm)',
+      batery: 'Non-removable Li-Ion 2691 mAh battery (10.28 Wh)',
+      color: 'White',
+      price: 2000000,
+      photo: '/img/ss-a21.jpg'
+    },
+    tags: {
+      priceRange: '<250',
+      brand: 'samsung',
+      color: 'black',
+      os: 'android',
+      internalMemory: '64',
+      ram: '4',
+      displaySize: '5.5',
+      displayResolution: '1080x1920',
+      camera: '12',
+      cpu: 'hexa_core'
+    }
+  },
+  {
+    info: {
+      name: 'Samsung Galaxy S10',
+      dimensions: '158.4 x 78.1 x 7.5 mm',
+      weight: '202 g',
+      displayType: 'LED-backlit IPS LCD, capacitive touchscreen, 16M colors',
+      displaySize: '5.5"',
+      displayResolution: '1080 x 1920 pixels',
+      os: 'Android 10',
+      cpu: 'Hexa-core (2x Monsoon + 4x Mistral)',
+      internalMemory: '256 GB',
+      ram: '6 GB',
+      camera: 'Dual: 12 MP (f/1.8, 28mm, OIS) + 12 MP (f/2.8, 57mm)',
+      batery: 'Non-removable Li-Ion 2691 mAh battery (10.28 Wh)',
+      color: 'White',
+      price: 12000000,
+      photo: '/img/ss-s10.jpg'
+    },
+    tags: {
+      priceRange: '750>',
+      brand: 'samsung',
+      color: 'grey',
+      os: 'android',
+      internalMemory: '256',
+      ram: '6',
+      displaySize: '5.5',
+      displayResolution: '1080x1920',
+      camera: '12',
+      cpu: 'hexa_core'
+    }
+  },
+  {
+    info: {
+      name: 'Samsung Galaxy S20',
+      dimensions: '158.4 x 78.1 x 7.5 mm',
+      weight: '202 g',
+      displayType: 'LED-backlit IPS LCD, capacitive touchscreen, 16M colors',
+      displaySize: '5.5"',
+      displayResolution: '1080 x 1920 pixels',
+      os: 'Android 10',
+      cpu: 'Hexa-core (2x Monsoon + 4x Mistral)',
+      internalMemory: '256 GB',
+      ram: '6 GB',
+      camera: 'Dual: 12 MP (f/1.8, 28mm, OIS) + 12 MP (f/2.8, 57mm)',
+      batery: 'Non-removable Li-Ion 2691 mAh battery (10.28 Wh)',
+      color: 'White',
+      price: 17000000,
+      photo: '/img/ss-s20.jpg'
+    },
+    tags: {
+      priceRange: '750>',
+      brand: 'samsung',
+      color: 'black',
+      os: 'android',
+      internalMemory: '256',
+      ram: '6',
+      displaySize: '5.5',
+      displayResolution: '1080x1920',
+      camera: '12',
+      cpu: 'hexa_core'
+    }
+  },
+  {
+    info: {
+      name: 'Samsung Galaxy A51',
+      dimensions: '158.4 x 78.1 x 7.5 mm',
+      weight: '202 g',
+      displayType: 'LED-backlit IPS LCD, capacitive touchscreen, 16M colors',
+      displaySize: '5.5"',
+      displayResolution: '1080 x 1920 pixels',
+      os: 'Android 10',
       cpu: 'Hexa-core (2x Monsoon + 4x Mistral)',
       internalMemory: '256 GB',
       ram: '4 GB',
@@ -97,7 +221,7 @@ const products = [
   },
   {
     info: {
-      name: 'HTC U11',
+      name: 'Xiaomi BlackShark',
       dimensions: '153.9 x 75.9 x 7.9 mm',
       weight: '169 g',
       displayType: 'Super LCD5 capacitive touchscreen, 16M colors',
@@ -109,17 +233,79 @@ const products = [
       ram: '6 GB',
       camera: '12 MP (f/1.7, 1.4 µm, Dual Pixel PDAF, 5-axis OIS)',
       batery: 'Non-removable Li-Ion 3000 mAh battery',
-      color: 'Ice White',
-      price: 4500000,
-      photo: '/img/htc_u11.jpg'
+      color: 'Black Green',
+      price: 8000000,
+      photo: '/img/xi-bs.jpg'
     },
     tags: {
-      priceRange: '250-500',
-      brand: 'htc',
-      color: 'white',
+      priceRange: '750>',
+      brand: 'xiaomi',
+      color: 'black',
       os: 'android',
       internalMemory: '128',
       ram: '6',
+      displaySize: '5.5',
+      displayResolution: '1440x2560',
+      camera: '12',
+      cpu: 'octa_core'
+    }
+  },
+  {
+    info: {
+      name: 'Xiaomi Redmi Note 8',
+      dimensions: '153.9 x 75.9 x 7.9 mm',
+      weight: '169 g',
+      displayType: 'Super LCD5 capacitive touchscreen, 16M colors',
+      displaySize: '5.5"',
+      displayResolution: '1440 x 2560 pixels',
+      os: 'Android 7.1 (Nougat)',
+      cpu: 'Octa-core (4x2.45 GHz Kryo & 4x1.9 GHz Kryo)',
+      internalMemory: '64 GB',
+      ram: '4 GB',
+      camera: '12 MP (f/1.7, 1.4 µm, Dual Pixel PDAF, 5-axis OIS)',
+      batery: 'Non-removable Li-Ion 3000 mAh battery',
+      color: 'Black',
+      price: 3000000,
+      photo: '/img/xi-n8.jpg'
+    },
+    tags: {
+      priceRange: '250-500',
+      brand: 'xiaomi',
+      color: 'black',
+      os: 'android',
+      internalMemory: '64',
+      ram: '4',
+      displaySize: '5.5',
+      displayResolution: '1440x2560',
+      camera: '12',
+      cpu: 'octa_core'
+    }
+  },
+  {
+    info: {
+      name: 'Xiaomi Mi A2',
+      dimensions: '153.9 x 75.9 x 7.9 mm',
+      weight: '169 g',
+      displayType: 'Super LCD5 capacitive touchscreen, 16M colors',
+      displaySize: '5.5"',
+      displayResolution: '1440 x 2560 pixels',
+      os: 'Android 7.1 (Nougat)',
+      cpu: 'Octa-core (4x2.45 GHz Kryo & 4x1.9 GHz Kryo)',
+      internalMemory: '64 GB',
+      ram: '4 GB',
+      camera: '12 MP (f/1.7, 1.4 µm, Dual Pixel PDAF, 5-axis OIS)',
+      batery: 'Non-removable Li-Ion 3000 mAh battery',
+      color: 'Solid Black',
+      price: 3000000,
+      photo: '/img/xi-a2.jpg'
+    },
+    tags: {
+      priceRange: '250-500',
+      brand: 'xiaomi',
+      color: 'black',
+      os: 'android',
+      internalMemory: '64',
+      ram: '4',
       displaySize: '5.5',
       displayResolution: '1440x2560',
       camera: '12',

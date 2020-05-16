@@ -51,4 +51,4 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
 
-app.listen(port, () => console.log('SERVER NOW RUNNING ON : http://localhost:', port));
+app.listen(port, () => console.log('=======================================\n\n-> Iman Maliki\n-> Leo Viranda\n-> Nurul Hakim\nSERVER NOW RUNNING ON : http://localhost:5000\n\n=======================================\n'));

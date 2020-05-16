@@ -3,7 +3,7 @@ import '@styles/Footer.css';
 
 const Footer = () => (
   <div className="footer">
-    <p>bukatoko &copy; 2020</p>
+    <p>BukaToko.com &copy; 2020</p>
   </div>
 );
 
