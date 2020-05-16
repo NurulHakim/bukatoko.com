@@ -4,3 +4,20 @@ import { initCatalog, clearFilters, setSortBy } from '@actions/index';
 import { isCatalogLoaded, sortProducts, filterProducts, selectSortBy } from '@selectors/catalog';
 import { IState } from '@typings/state/index';
 import Products from './Products';
+
+const mapStateToProps = (state: IState) => ({
+    catalogLoaded: isCatalogLoaded(state),
+    catalog: sortProducts(filterProducts(state), state.sortBy),
+    sortBy: selectSortBy(state)
+  });
+  
+  const actions = {
+    initCatalog,
+    clearFilters,
+    setSortBy
+  };
+  
+  export default compose(
+    connect(mapStateToProps, actions)
+  )(Products);
+  
