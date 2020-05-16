@@ -71,19 +71,19 @@ class ProductDetails extends React.Component<Props, State> {
                 <td>{info.dimensions}</td>
               </tr>
               <tr>
-                <th>Weight</th>
+                <th>Berat</th>
                 <td>{info.weight}</td>
               </tr>
               <tr>
-                <th>Display Type</th>
+                <th>Display</th>
                 <td>{info.displayType}</td>
               </tr>
               <tr>
-                <th>Display Size</th>
+                <th>Ukuran</th>
                 <td>{info.displaySize}</td>
               </tr>
               <tr>
-                <th>Display Resolution</th>
+                <th>Resolusi</th>
                 <td>{info.displayResolution}</td>
               </tr>
               <tr>
@@ -95,7 +95,7 @@ class ProductDetails extends React.Component<Props, State> {
                 <td>{info.cpu}</td>
               </tr>
               <tr>
-                <th>Internal Memory</th>
+                <th>Memori Internal</th>
                 <td>{info.internalMemory}</td>
               </tr>
               <tr>
@@ -103,7 +103,7 @@ class ProductDetails extends React.Component<Props, State> {
                 <td>{info.ram}</td>
               </tr>
               <tr>
-                <th>Camera</th>
+                <th>Kamera</th>
                 <td>{info.camera}</td>
               </tr>
               <tr>
@@ -111,15 +111,15 @@ class ProductDetails extends React.Component<Props, State> {
                 <td>{info.batery}</td>
               </tr>
               <tr>
-                <th>Color</th>
+                <th>Warna</th>
                 <td>{info.color}</td>
               </tr>
             </table>
             <Snackbar
               open={this.state.snackbarOpen}
-              message={loggedUser ? 'Item added to your cart.' : 'You must be logged in!'}
+              message={loggedUser ? 'Item titambahkan ke keranjang' : 'Silahkan Login terlebih dahulu'}
               autoHideDuration={4000}
-              bodyStyle={loggedUser ? { 'background': '#64DD17' } : { 'background': '#F44336' }}
+              bodyStyle={loggedUser ? { 'background': '#64DD17' } : { 'background': '#FF0000' }}
             />
           </div>
         </div>
@@ -128,7 +128,7 @@ class ProductDetails extends React.Component<Props, State> {
             <RaisedButton
               containerElement={<Link to="/" />}
               className="btn"
-              label="Back to catalog"
+              label="Home"
               labelPosition="after"
               secondary={true}
               icon={<KeyboardArrowLeft />}
@@ -136,17 +136,17 @@ class ProductDetails extends React.Component<Props, State> {
           </div>
           <div className="right">
             <div className="price">
-              <span className="price-text">Price: </span>
-              <span className="price-num">{numeral(info.price).format('$0,0.00')}</span>
+              <span className="price-text">Harga: </span>
+              <span className="price-num">Rp.{numeral(info.price).format('0,0')}</span>
             </div>
             <div className="quantity">
-              <span className="price-text">Quantity: </span>
-              <span><input type="number" value={this.state.postData.quantity} min="1" max="5" onChange={this.onQuantityChange} /></span>
+              <span className="price-text">Jumlah: </span>
+              <span><input type="number" value={this.state.postData.quantity} min="1" max="3" onChange={this.onQuantityChange} /></span>
             </div>
             <div className="btn">
               <RaisedButton
                 onClick={this.addToCart}
-                label="Add to cart"
+                label="Tambah"
                 labelPosition="before"
                 primary={true}
                 icon={<AddShoppingCart />}

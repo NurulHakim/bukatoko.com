@@ -23,17 +23,17 @@ class FiltersList extends React.Component<Props> {
     return (
       <div className="filtersList">
         <List>
-          <Subheader>Search by:</Subheader>
+          <Subheader>Cari Berdasarkan:</Subheader>
           <ListItem
             className="listItem"
-            primaryText="Price"
+            primaryText="Harga"
             initiallyOpen={false}
             primaryTogglesNestedList={true}
             nestedItems={[
-              <Checkbox className="checkbox" label="< Rp.2500.000" name="priceRange" value="<250" checked={checked.includes('<250')} onCheck={this.handleCheck} />,
-              <Checkbox className="checkbox" label="Rp.2500.000 - Rp.5000.000" name="priceRange" value="250-500" checked={checked.includes('250-500')} onCheck={this.handleCheck} />,
-              <Checkbox className="checkbox" label="Rp.5000.000 - Rp.7500.000" name="priceRange" value="500-750" checked={checked.includes('500-750')} onCheck={this.handleCheck} />,
-              <Checkbox className="checkbox" label="Rp.7500.000 >" name="priceRange" value="750>" checked={checked.includes('750>')} onCheck={this.handleCheck} />
+              <Checkbox className="checkbox" label="< Rp.2.500.000" name="priceRange" value="<250" checked={checked.includes('<250')} onCheck={this.handleCheck} />,
+              <Checkbox className="checkbox" label="Rp.2.500.000 - Rp.5.000.000" name="priceRange" value="250-500" checked={checked.includes('250-500')} onCheck={this.handleCheck} />,
+              <Checkbox className="checkbox" label="Rp.5.000.000 - Rp.7.500.000" name="priceRange" value="500-750" checked={checked.includes('500-750')} onCheck={this.handleCheck} />,
+              <Checkbox className="checkbox" label="Rp.7.500.000 >" name="priceRange" value="750>" checked={checked.includes('750>')} onCheck={this.handleCheck} />
             ]}
           />
           <ListItem
@@ -51,12 +51,12 @@ class FiltersList extends React.Component<Props> {
           />
           <ListItem
             className="listItem"
-            primaryText="Color"
+            primaryText="Warna"
             initiallyOpen={false}
             primaryTogglesNestedList={true}
             nestedItems={[
-              <Checkbox className="checkbox" label="Black" name="color" value="black" checked={checked.includes('black')} onCheck={this.handleCheck} />,
-              <Checkbox className="checkbox" label="White" name="color" value="white" checked={checked.includes('white')} onCheck={this.handleCheck} />,
+              <Checkbox className="checkbox" label="Hitam" name="color" value="black" checked={checked.includes('black')} onCheck={this.handleCheck} />,
+              <Checkbox className="checkbox" label="Putih" name="color" value="white" checked={checked.includes('white')} onCheck={this.handleCheck} />,
               <Checkbox className="checkbox" label="Grey" name="color" value="grey" checked={checked.includes('grey')} onCheck={this.handleCheck} />
             ]}
           />
@@ -108,7 +108,7 @@ class FiltersList extends React.Component<Props> {
               <Checkbox className="checkbox" label="6.3''" name="displaySize" value="6.3" checked={checked.includes('6.3')} onCheck={this.handleCheck} />
             ]}
           />
-          <ListItem
+          {/* <ListItem
             className="listItem"
             primaryText="Display resolution"
             initiallyOpen={false}
@@ -144,7 +144,7 @@ class FiltersList extends React.Component<Props> {
               <Checkbox className="checkbox" label="Hexa Core" name="cpu" value="hexa_core" checked={checked.includes('hexa_core')} onCheck={this.handleCheck} />,
               <Checkbox className="checkbox" label="Octa Core" name="cpu" value="octa_core" checked={checked.includes('octa_core')} onCheck={this.handleCheck} />
             ]}
-          />
+          /> */}
         </List>
       </div>
     )

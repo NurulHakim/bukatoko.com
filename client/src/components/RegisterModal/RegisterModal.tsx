@@ -12,31 +12,31 @@ const RegisterModal = ({ isOpen, onRequestClose, setActiveModal }: ModalProps) =
     onRequestClose={onRequestClose}
   >
     <form className="form" action="/auth/register" method="POST">
-      <h1>Register</h1>
+      <h1>Daftar</h1>
       <TextField
-        hintText="Enter Username"
+        hintText="Masukan username"
         floatingLabelText="Username"
         name="username"
         autoFocus
       /><br />
       <TextField
-        hintText="Enter Password"
+        hintText="Masukan Password"
         floatingLabelText="Password"
         name="password"
         type="password"
       /><br />
       <TextField
-        hintText="Enter E-mail"
+        hintText="Masukan E-mail"
         floatingLabelText="E-mail"
         name="email"
       /><br />
       <TextField
-        hintText="Enter Address"
+        hintText="Alamat lengkap"
         floatingLabelText="Address"
         name="address"
       /><br />
       <TextField
-        hintText="Enter Telephone Number"
+        hintText="Nomor Handphone"
         floatingLabelText="Telephone Number"
         name="phone"
       /><br />
@@ -46,7 +46,7 @@ const RegisterModal = ({ isOpen, onRequestClose, setActiveModal }: ModalProps) =
         primary={true} 
         type="submit"
       />
-      <p>Already have an account? <a onClick={() => setActiveModal('login')}>Login here</a>.</p>
+      <p>Sudah punya akun? <a onClick={() => setActiveModal('login')}>Login</a>.</p>
     </form>
   </Modal>
 );

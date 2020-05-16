@@ -98,7 +98,7 @@ class Cart extends React.Component<Props, State> {
               <RaisedButton
                 onClick={() => this.setActiveModal('checkout')}
                 className="btn"
-                label="Checkout"
+                label="Bayar"
                 labelPosition="before"
                 icon={<NavigateNext />}
                 primary={true}
@@ -107,7 +107,7 @@ class Cart extends React.Component<Props, State> {
               <RaisedButton
                 onClick={() => this.setActiveModal('dialog')}
                 className="btn"
-                label="Empty cart"
+                label="Kosongkan"
                 labelPosition="before"
                 icon={<RemoveShoppingCart />}
                 secondary={true}
@@ -125,15 +125,15 @@ class Cart extends React.Component<Props, State> {
               setActiveModal={this.setActiveModal}
             />
             <Dialog
-              title="Are you sure that you want to empty your cart?"
+              title="Anda yakin ingin menghapus semua item?"
               actions={[
                 <FlatButton
-                  label="Cancel"
+                  label="Batal"
                   primary={true}
                   onClick={() => this.setActiveModal(null)}
                 />,
                 <FlatButton
-                  label="Yes"
+                  label="Ya"
                   primary={true}
                   onClick={this.emptyCart}
                 />,
@@ -141,7 +141,7 @@ class Cart extends React.Component<Props, State> {
               modal={true}
               open={this.state.activeModal === 'dialog'}
             >
-              All items will be removed.
+              Semua Item Dihapus
             </Dialog>
           </div>
           <div className="cart-items">
@@ -150,9 +150,9 @@ class Cart extends React.Component<Props, State> {
                 <thead>
                   <tr>
                     <th></th>
-                    <th>Product Name</th>
-                    <th>Price</th>
-                    <th>Qty</th>
+                    <th>Nama Produk</th>
+                    <th>Harga</th>
+                    <th>Jumlah</th>
                     <th>Total</th>
                     <th></th>
                   </tr>
@@ -172,11 +172,11 @@ class Cart extends React.Component<Props, State> {
                   })}
                 </tbody>
               </table> :
-              <h1>No items in the cart.</h1>
+              <h1>Keranjang Kosong</h1>
             }
             <Snackbar
               open={this.state.activeModal === 'snackbar'}
-              message="Item removed from your cart."
+              message="Item telah dihapus"
               bodyStyle={{ 'textAlign': 'center' }}
             />
           </div>

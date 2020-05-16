@@ -15,7 +15,7 @@ const OrderSuccessModal: React.SFC<ModalProps> = ({ isOpen, setActiveModal }) =>
       <img src="/img/success.gif" />
       <br/>
       <p>
-        Your order has been received. The items you've ordered will be sent to your address.
+        Terimakasih telah berbelanja di BukaToko.com :)
       </p>
       <RaisedButton
         onClick={() => setActiveModal(null)}

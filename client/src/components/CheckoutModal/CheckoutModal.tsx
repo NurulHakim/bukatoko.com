@@ -3,7 +3,8 @@ import * as numeral from 'numeral';
 import * as Modal from 'react-modal';
 import { ICartProduct } from '@typings/state/index';
 import { ModalProps } from '@typings/modal';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
+import RaisedButton from 'material-ui/RaisedButton';
 import '@styles/CheckoutModal.css';
 
 const CheckoutModal: React.SFC<ModalProps> = ({ cart, isOpen, setActiveModal, makeOrder }): JSX.Element => (
@@ -13,16 +14,16 @@ const CheckoutModal: React.SFC<ModalProps> = ({ cart, isOpen, setActiveModal, ma
     onRequestClose={() => setActiveModal(null)}
   >
     <div className="order">
-      <h1>Checkout Information</h1>
+      <h1>Informasi Pembayaran</h1>
       <p>
-        <i>Please read the list of items in your order and click "Confirm" to confirm your order.</i>
+        <i>Pastikan barang dan jumlah yang ada pesan sesuai.</i>
       </p>
       <table>
         <thead>
           <tr>
-            <th>Product Name</th>
-            <th>Price</th>
-            <th>Quantity</th>
+            <th>Nama Produk</th>
+            <th>Harga</th>
+            <th>Jumlah</th>
             <th>Total</th>
           </tr>
         </thead>
@@ -40,20 +41,20 @@ const CheckoutModal: React.SFC<ModalProps> = ({ cart, isOpen, setActiveModal, ma
         </tbody>
       </table>
       <p className="total">
-        <b>TOTAL AMOUNT: </b>
+        <b>TOTAL : </b>
         <span>Rp. {numeral(cart!.length && cart!.reduce((acc, item) => acc += item.product.info.price * item.quantity!, 0)).format('0,0')}</span>
       </p>
       <div className="btns">
-        <Button
+        <RaisedButton
           className="btn"
           onClick={() => setActiveModal(null)}>
-          Cancel
-        </Button>
-        <Button
+          Batal
+        </RaisedButton>
+        <RaisedButton
           className="btn"
           onClick={makeOrder}>
-          Confirm
-        </Button>
+          Konfirmasi
+        </RaisedButton>
       </div>
     </div>
   </Modal>

@@ -42,12 +42,12 @@ const Product = ({ item: {info, _id} }: Props) => {
         <div className="content-right">
           <div className="content-info">
             <p><b>Price:</b></p>
-            <h2>{numeral(price).format('$0,0.00')}</h2>
+            <h2>Rp.{numeral(price).format('0,0')}</h2>
           </div>
           <RaisedButton
             containerElement={<Link to={`/product/${_id}`} />}
             className="btn"
-            label="See more"
+            label="Lihat"
             labelPosition="before"
             primary={true}
             icon={<NavigateNext />}
