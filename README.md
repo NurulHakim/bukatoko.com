@@ -14,7 +14,7 @@ Aplikasi BukaToko.com adalah aplikasi marketplace untuk melakukan pembelian bara
 </b>
 <br>
 <b>Cara menjalankan program :</b>
-<br><b>-> Cara pertama :</b>
+<br><b>-> Cara pertama :</b><br>
   1. Download source code (via git clone / download zip)<br>
   2. masuk ke root (../bukatoko.com/)<br>
   3. npm start<br>
@@ -41,14 +41,14 @@ Aplikasi BukaToko.com adalah aplikasi marketplace untuk melakukan pembelian bara
 
 <br>Link YouTube : https://youtu.be/0tC39tf0sXs
   <br>
-===================================================================================================
+########################################################################################################
 <br><b>NOTE : </b>
   <br>->Gunakan npm dengan run administrator
   <br>->PC terhubung dengan internet
   <br>->Harus login sebelum memasukan ke keranjang
   <br>->Jika masih terjadi error dapat melihat demo aplikasi pada link youtube yang tertera
 <br>
-===================================================================================================
+########################################################################################################
 
 <br> Mohon maaf atas kekurangannya.
 <br> Terimakasih.
